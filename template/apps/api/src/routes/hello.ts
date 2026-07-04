@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { zValidator } from '@hono/zod-validator'
 import { Hono } from 'hono'
-import { superjson } from 'superjson'
+import superjson from 'superjson'
 import type { Env } from '../lib/types'
 
 const hello = new Hono<Env>()
