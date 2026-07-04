@@ -1,6 +1,6 @@
 {
   "name": "create-b3-cf-app",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Scaffold a Bun + Hono + Cloudflare Workers + React monorepo in seconds",
   "packageManager": "bun@1.3.14",
   "type": "module",
