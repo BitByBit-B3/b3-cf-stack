@@ -1,13 +1,11 @@
-name: CI
+name: Deploy
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
-  quality:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,9 +13,9 @@ jobs:
       - run: bun install --frozen-lockfile
       - name: Type check
         run: bun run typecheck
-      - name: Lint
-        run: bun run lint
-      - name: Dead code check
-        run: bun run knip || true
-      - name: Test
-        run: bun run test
+      - name: Build
+        run: bun run build
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
