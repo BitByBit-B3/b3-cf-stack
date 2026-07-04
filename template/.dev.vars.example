@@ -1,0 +1,10 @@
+# Cloudflare credentials (fill in your own)
+CLOUDFLARE_ACCOUNT_ID=
+CLOUDFLARE_API_TOKEN=
+
+# Better Auth
+BETTER_AUTH_SECRET=your-secret-here
+BETTER_AUTH_URL=http://localhost:8787
+
+# D1
+DATABASE_ID=

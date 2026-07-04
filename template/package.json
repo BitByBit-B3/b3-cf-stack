@@ -1,0 +1,36 @@
+{
+  "name": "{{packageName}}",
+  "version": "0.1.0",
+  "private": true,
+  "description": "{{description}}",
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "knip": "knip",
+    "test": "turbo run test",
+    "db:generate": "bun run --filter @repo/core db:generate",
+    "db:migrate": "bash scripts/db-migrate.sh",
+    "db:migrate:remote": "bash scripts/db-migrate.sh --remote",
+    "prepare": "lefthook install",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
+    "cf:tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.16",
+    "knip": "6.14.2",
+    "lefthook": "2.1.8",
+    "turbo": "^2.5.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.95.0"
+  }
+}

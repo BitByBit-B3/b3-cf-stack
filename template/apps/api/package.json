@@ -1,0 +1,31 @@
+{
+  "name": "@repo/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./app": "./src/app.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.0",
+    "@repo/core": "workspace:*",
+    "better-auth": "^1.6.11",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.9.0",
+    "superjson": "^2.2.6",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250923.0",
+    "@types/node": "^20.19.41",
+    "typescript": "^5.9.3",
+    "vitest": "4.1.8",
+    "wrangler": "^4.95.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "workspaces": {
+    "packages/core": {
+      "entry": ["src/index.ts!", "drizzle.config.ts"],
+      "project": "src/**/*.ts"
+    },
+    "packages/ui": {
+      "entry": ["src/*.tsx!", "src/utils.ts!"],
+      "project": "src/**/*.{ts,tsx}"
+    },
+    "apps/api": {
+      "entry": [
+        "src/index.ts!",
+        "vitest.config.ts",
+        "vitest.integration.config.ts",
+        "test/**/*.test.ts"
+      ],
+      "project": "src/**/*.ts"
+    },
+    "apps/web": {
+      "entry": [
+        "src/main.tsx!",
+        "index.html",
+        "vite.config.ts",
+        "vitest.config.ts",
+        "test/**/*.test.{ts,tsx}"
+      ],
+      "project": "src/**/*.{ts,tsx}"
+    }
+  },
+  "ignoreDependencies": ["@cloudflare/workers-types", "tailwindcss", "@tailwindcss/vite"]
+}
