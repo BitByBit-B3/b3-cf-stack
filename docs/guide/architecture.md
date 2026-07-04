@@ -1,7 +1,5 @@
 # Architecture
 
-![Stack architecture](/stack-architecture.png)
-
 ## Overview
 
 The scaffolded project is a single Cloudflare Worker that serves both the API and the SPA.

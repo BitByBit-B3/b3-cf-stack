@@ -8,9 +8,6 @@ hero:
   name: create-b3-cf-app
   text: A full Cloudflare Workers stack, scaffolded in seconds
   tagline: Bun · Hono · React · Drizzle · D1 · Better Auth · Radix UI — all wired up with Turborepo, Biome, and CI.
-  image:
-    src: /stack-architecture.png
-    alt: Stack architecture
   actions:
     - theme: brand
       text: Get started
