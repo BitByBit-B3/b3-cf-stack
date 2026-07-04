@@ -43,6 +43,8 @@ const vars = {
   projectName: dir,
   packageName,
   description: description || 'A Cloudflare Workers + React application',
+  year: String(new Date().getFullYear()),
+  author: 'Your Name',
 }
 
 await scaffold(vars, dir, install, gitInit)

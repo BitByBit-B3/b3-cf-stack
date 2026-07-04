@@ -8,6 +8,8 @@ export interface Vars {
   projectName: string
   packageName: string
   description: string
+  year: string
+  author: string
 }
 
 const TEMPLATE_DIR = new URL('../template', import.meta.url).pathname
@@ -33,6 +35,8 @@ function processContent(content: string, vars: Vars): string {
     .replace(/\{\{projectName\}\}/g, vars.projectName)
     .replace(/\{\{packageName\}\}/g, vars.packageName)
     .replace(/\{\{description\}\}/g, vars.description)
+    .replace(/\{\{year\}\}/g, vars.year)
+    .replace(/\{\{author\}\}/g, vars.author)
 }
 
 function copyDir(src: string, dest: string, vars: Vars): void {
@@ -63,7 +67,6 @@ function exec(cmd: string, args: string[], cwd: string): Promise<void> {
     const proc = spawn(cmd, args, {
       cwd,
       stdio: 'inherit',
-      shell: true,
     })
     proc.on('close', (code) => {
       if (code === 0) resolve()
