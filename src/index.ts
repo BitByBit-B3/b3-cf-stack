@@ -2,7 +2,7 @@
 
 import { cancel, confirm, intro, isCancel, outro, select, text } from '@clack/prompts'
 import { bgCyan, bold, cyan, green, reset, yellow } from 'kleur/colors'
-import { scaffold } from './scaffold'
+import { scaffold } from './scaffold.js'
 
 intro(reset(bgCyan(bold(' create-b3-cf-app '))))
 
