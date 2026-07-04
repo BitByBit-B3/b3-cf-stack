@@ -5,7 +5,7 @@
   "packageManager": "bun@1.3.14",
   "type": "module",
   "bin": {
-    "create-b3-cf-app": "./dist/index.js"
+    "create-b3-cf-app": "dist/index.js"
   },
   "files": [
     "dist",
