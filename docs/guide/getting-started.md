@@ -33,7 +33,7 @@ bun run --filter @repo/web dev
 bun run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173). The home page calls `/api/rpc/hello` through the typed Hono RPC client.
+Open the Vite dev server URL (default `http://localhost:5173`). The home page calls `/api/rpc/hello` through the typed Hono RPC client.
 
 ## Deploy
 

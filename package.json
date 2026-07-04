@@ -18,7 +18,8 @@
     "dev": "bun run src/index.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:deploy": "cd docs && bun run deploy"
   },
   "dependencies": {
     "@clack/prompts": "^0.10.1",

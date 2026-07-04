@@ -2,11 +2,18 @@
 
 Scaffold a **Bun + Hono + Cloudflare Workers + React** monorepo in seconds.
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/create-b3-cf-app"><img src="https://img.shields.io/npm/v/create-b3-cf-app?style=flat-square&color=blue" alt="npm version"></a>
+  <a href="https://docs.b3-cf-stack.bbyb.dev"><img src="https://img.shields.io/badge/docs-vitepress-blue?style=flat-square" alt="docs"></a>
+  <a href="https://github.com/BitByBit-B3/b3-cf-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license"></a>
+</p>
+
 ![Stack architecture](docs/public/stack-architecture.png)
 
 ## Usage
 
 ```bash
+npx create-b3-cf-app
 bunx create-b3-cf-app
 ```
 
@@ -53,12 +60,11 @@ my-app/
 
 ## Docs
 
-Full documentation at **[create-b3-cf-app.vercel.app](https://create-b3-cf-app.vercel.app)** (coming soon) or in the [`docs/`](docs/) directory.
+Full documentation at **[docs.b3-cf-stack.bbyb.dev](https://docs.b3-cf-stack.bbyb.dev)** or in the [`docs/`](docs/) directory.
 
 ## Development
 
 ```bash
-cd my-app
 cd my-app
 bun run dev
 ```
