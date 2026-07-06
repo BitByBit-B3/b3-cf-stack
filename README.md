@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="create-b3-cf-app — a full-stack Bun + Hono + Cloudflare Workers + React monorepo, scaffolded in one command" width="100%">
+</p>
+
 # create-b3-cf-app
 
 Scaffold a **Bun + Hono + Cloudflare Workers + React** monorepo in seconds.
